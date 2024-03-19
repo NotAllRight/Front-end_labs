@@ -45,7 +45,10 @@ module.exports = {
       filename: "news.html", // ім'я вихідного файлу
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "src/assets/images", to: "assets/images" }],
+      patterns: [
+        { from: "src/assets/images", to: "assets/images" },
+        { from: "scss/styles.css", to: "styles.css" },
+      ],
     }),
     new MiniCssExtractPlugin({
       filename: "styles.css",
