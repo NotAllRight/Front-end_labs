@@ -9,16 +9,14 @@
   flex-direction: column; }
 
 body {
-  background: linear-gradient(to bottom right, #7E07A9, #67237F, #52026E, #AC3BD4, #B764D4);
+  background: linear-gradient(to bottom right, #BDF400, #98B72E, #7B9E00, #CFF93E, #DBF970);
   background-attachment: fixed; }
 
 header {
   padding: 20px; }
   header h1 a {
-    color: #c6c6c6;
     text-decoration: none; }
   header nav ul {
-    color: #c6c6c6;
     padding-left: 20px; }
   header li {
     padding-left: 0px; }
@@ -27,15 +25,14 @@ header {
       text-decoration: none; }
 
 section {
-  background-color: #B764D4;
+  background-color: #DBF970;
   padding: 20px;
   border-radius: 20px; }
 
 footer {
-  background-color: #67237F;
+  background-color: #98B72E;
   padding: 10px;
   margin-top: 20px;
-  color: white;
   border-radius: 20px; }
 
 .hobby-list {
@@ -43,7 +40,7 @@ footer {
   padding-left: 0px; }
 
 a {
-  color: #B764D4; }
+  color: #DBF970; }
 
 table {
   border-collapse: collapse;
@@ -54,7 +51,7 @@ table, th, td {
   padding: 10px; }
 
 tr:nth-child(odd) {
-  background-color: lightgray; }
+  background-color: #7B9E00; }
 
 .photo-container {
   display: flex;
@@ -79,20 +76,18 @@ tr:nth-child(odd) {
   flex: 1 0 30%;
   margin: 1%;
   flex-direction: column;
-  background-color: #7E07A9;
+  background-color: #98B72E;
   border-radius: 20px;
   overflow: hidden; }
   .news-container__el h3 {
     align-items: center;
-    text-align: center;
-    color: #c6c6c6; }
+    text-align: center; }
   .news-container__el img {
     width: 100%;
     height: 250px;
     object-fit: cover; }
   .news-container__el p {
-    padding: 15px;
-    color: #c6c6c6; }
+    padding: 15px; }
   .news-container__el a {
     display: block;
     padding: 15px; }
