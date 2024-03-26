@@ -39,3 +39,14 @@ Scss to css: `npx node-sass index.scss styles.css`
 Build project: `npm run build`.
 
 Start server: `npm run dev-start`.
+
+## lab_7
+Css media screen. Check styles.css and print.css.
+
+`npm install webpack webpack-cli html-webpack-plugin style-loader css-loader sass-loader mini-css-extract-plugin node-sass`
+
+Scss to css: `npx node-sass index.scss styles.css`
+
+Build project: `npm run build`.
+
+Start server: `npm run dev-start`.

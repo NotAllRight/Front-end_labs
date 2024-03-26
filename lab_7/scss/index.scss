@@ -1,0 +1,180 @@
+@import 'normalize.css';
+
+// global
+
+$color-primary: #BDF400;
+$color-secondary: #98B72E;
+$color-tertiary: #7B9E00;
+$color-accent1: #CFF93E;
+$color-accent2: #DBF970;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: linear-gradient(to bottom right, $color-primary, $color-secondary, $color-tertiary, $color-accent1, $color-accent2);
+  background-attachment: fixed;
+}
+
+header {
+  padding: 20px;
+
+  h1 {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    ul {
+      padding-left: 20px;
+    }
+  }
+
+  li {
+    padding-left: 0px;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+section {
+  background-color: $color-accent2;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: $color-secondary;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+// 1.
+// a) При ширині вікна браузера, що менше ніж фіксована ширина виводу контенту, 
+// перетворити фіксовану ширину виводу контенту на відносну 90% (обов’язково центрувати);
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+// b) Головне меню, при зменшенню розміру вікна браузера, перетворити з горизонтального
+// на вертикальне, елементи меню відносної ширини та центровані (шапка сайту відповідно змінює висоту);
+@media screen and (max-width: 800px) {
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li {
+    width: 100%;
+  }
+}
+
+// c) У версіях браузера Internet Explorer 10 та нижчих відобразити відповідне
+// (передбачити заздалегідь приховане) повідомлення у шапці сайту.
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body::before {
+    content: "Ви використовуєте стару версію Internet Explorer, будь ласка, оновіть свій браузер.";
+    display: block;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+// index
+
+.hobby-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a {
+  color: $color-accent2;
+}
+
+// rozklad
+
+table {
+  border-collapse: collapse;
+  line-height: 1.1;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: $color-tertiary;
+}
+
+// photo
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-container__el {
+  flex: 1 0 30%;
+  margin: 1%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 350px;
+  }
+}
+
+// news
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-container__el {
+  flex: 1 0 30%;
+  margin: 1%;
+  flex-direction: column;
+  background-color: $color-secondary;
+  border-radius: 20px;
+  overflow: hidden;
+
+  h3 {
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  p {
+    padding: 15px;
+  }
+
+  a {
+    display: block;
+    padding: 15px;
+  }
+}

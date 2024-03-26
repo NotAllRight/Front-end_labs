@@ -1,0 +1,25 @@
+/* 2.
+   a) Виводити при друці назву сайту, заголовок та вміст сторінки, приховавши решту шапки та підвал сайту; */
+header, footer {
+    display: none;
+}
+
+/* b) Видалити з виводу всі фонові зображення та кольори */
+body {
+    background: none !important;
+}
+
+/* c) Відобразити повний URL взамін гіпертекстових посилань; */
+a:after {
+    content: " (" attr(href) ")";
+}
+
+/* d) Для тексту передбачити вивід з використанням шрифтів с засіками (Times New Roman, Georgia, Palatino); */
+body {
+    font-family: 'Times New Roman', Georgia, Palatino;
+}
+
+/* e) Встановити поля при друці рівні 50px; */
+@page {
+    margin: 50px;
+}
