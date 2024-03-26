@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "development", // устанавливаем режим development
+  mode: "development",
   entry: {
     main: path.resolve(__dirname, "./src/index.js"),
   },
@@ -47,7 +47,6 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/assets/images", to: "assets/images" },
-        { from: "scss/styles.css", to: "styles.css" },
       ],
     }),
     new MiniCssExtractPlugin({
