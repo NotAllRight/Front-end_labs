@@ -50,3 +50,10 @@ Scss to css: `npx node-sass index.scss styles.css`
 Build project: `npm run build`.
 
 Start server: `npm run dev-start`.
+
+## lab_8
+Simple React app with using templates.
+
+Build project: `npm run build`.
+
+Start server: `npm start`.
