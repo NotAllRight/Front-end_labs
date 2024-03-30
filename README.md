@@ -57,3 +57,10 @@ Simple React app with using templates.
 Build project: `npm run build`.
 
 Start server: `npm start`.
+
+## lab_9
+React app with amount filter by years and expenses adding function.
+
+Build project: `npm run build`.
+
+Start server: `npm start`.
